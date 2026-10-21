@@ -1,0 +1,30 @@
+# awesome-ai-api
+
+> The world's largest open-source leaderboard of 200+ AI API gateways & relays. Daily /v1/models probe. Bilingual (EN/中文).
+
+## What is awesome-ai-api?
+
+A curated, actively maintained directory of AI API providers — gateways, relays, resellers — with daily automated probing of /v1/models endpoints to verify liveness and model availability.
+
+## Key Features
+
+- 200+ AI API providers tracked
+- Daily automated /v1/models probing for liveness verification
+- Bilingual documentation (English + Chinese)
+- OpenAI-compatible endpoint focus
+- Covers: ChatGPT API, Claude, DeepSeek, Gemini, and more
+- MIT licensed
+
+## Use Cases
+
+- Find reliable AI API providers
+- Compare pricing across gateways
+- Discover OpenAI-compatible alternatives
+- Monitor provider availability
+
+## Links
+
+- Repository: https://github.com/MackDing/awesome-ai-api
+- Live leaderboard: https://mackding.github.io/awesome-ai-api/
+- Author: https://github.com/MackDing
+- OPC Hub: https://opc.ren

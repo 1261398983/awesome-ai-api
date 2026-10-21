@@ -1,0 +1,300 @@
+# awesome-ai-api
+
+> 全球最大的开源 AI API 中转站评测中心  
+> 社区驱动 · 完全透明 · **每个站点每日实探** · 无付费排名
+
+<p align="center">
+  <a href="https://awesome.re"><img src="https://awesome.re/badge.svg" alt="Awesome"></a>
+  <a href="./LICENSE"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License: MIT"></a>
+  <a href="./CONTRIBUTING.md"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs Welcome"></a>
+  <!-- STATS_ZH:BEGIN -->
+  <img src="https://img.shields.io/badge/%E4%B8%AD%E8%BD%AC%E7%AB%99-185-blue" alt="中转站总数">
+  <img src="https://img.shields.io/badge/API%E5%B7%B2%E9%AA%8C%E8%AF%81-88-success" alt="API已验证">
+  <img src="https://img.shields.io/badge/%E6%9B%B4%E6%96%B0-%E6%AF%8F%E6%97%A510%3A00_SGT-orange" alt="每日更新">
+  <!-- STATS_ZH:END -->
+</p>
+
+<p align="center">
+  <b>🇨🇳 中文</b> · <a href="./README.md">English</a> · <a href="https://mackding.github.io/awesome-ai-api/zh/">🌐 在线页面</a>
+</p>
+
+---
+
+## 我们与别家不同
+
+我们不只是列表—— **每天会真实探测每个站点的 OpenAI 兼容 `/v1/models` 端点**。主页 `200 OK` 不算数。
+
+- 🔌 **端点级真实性验证** — 每一个 🔌 徽章 = 接口层确认可用
+- 🔍 **透明** — [原始数据](./data/gateways.json) Git 全历史可追溯
+- 🌍 **全球** — 中英双语，涵盖国内外
+- 🛠 **开发者优先** — 结构化 JSON、每日历史快照、PR 可编辑
+- 🤝 **社区驱动** — 价格与评测由真实用户更新
+
+---
+
+## 🎯 快速选择
+
+200+ 个站看花了？从这里开始。
+
+<!-- QUICKPICKS_ZH:BEGIN -->
+| 使用场景 | 推荐 | 理由 |
+|---|---|---|
+| 🌐 **全球统一 API** | [OpenRouter](https://openrouter.ai) | 先驱者，最稳定，最贵 |
+| 👨‍💻 **国内最佳 Claude Code** | [PackyAPI](https://www.packyapi.com) | Claude Code 原生支持，上游活跃，¥1 试用 |
+| 🏢 **企业客户／开发票** | [柏拉图AI](https://api.bltcy.ai) · [云雾](https://yunwu.ai) | 老牌站，多节点，支持 MidJourney/DeepSeek，能开票 |
+| 💰 **极致低价 Claude（接受风险）** | [Terminal.Pub](https://terminal.pub) · [XcodeBest](https://xcode.best) | ~官方 0.15%，新站少充 |
+| 🆓 **免费试用** | [AnyRouter](https://anyrouter.dev) · [发现AI](https://www.findcg.com) | 注册送额度，无需绑卡 |
+| 🏠 **自建自用** | [One API](https://github.com/songquanpeng/one-api) · [New API](https://github.com/Calcium-Ion/new-api) | 开源 · 国内 60% 站点的底层 |
+| ⚡ **纯推理（Llama/Qwen/DeepSeek）** | [Groq](https://groq.com) · [Together](https://together.ai) · [Fireworks](https://fireworks.ai) | 非中转，自建 GPU，仅支持国外信用卡 |
+| 🌯 **多模态（视频／音乐／图像）** | [神马AI](https://api.whatai.cc) · [302.AI](https://302.ai) | MidJourney、可灵、Suno、PPT生成 |
+<!-- QUICKPICKS_ZH:END -->
+
+> ⚠️ **切勿大额充值。** 这个行业每周都有跑路。先充 ¥10 试用、验证质量，再考虑大额。
+
+---
+
+## 💚 赞助本项目
+
+本仓库完全免费、无广告、无付费排名。如果排行榜帮你避开了跑路站，可以考虑赞助：
+
+- **USDT（任一 EVM 链 — ERC20 / BSC / Polygon / Arbitrum / Base / Optimism）：**  
+  `0xa5c74e7D3f0c8f1c0d7A395A6B7861Ab0A64cA7F`
+- ⭐ **Star 仓库** — 也帮大忙，能上 GitHub Trending。
+- 📝 **提一个 PR** 举报或补充中转站 — 最有价值的贡献。
+
+> 💡 **转账前认准链。** 从交易所提币选择 **ERC20 / BSC / Polygon / Arbitrum / Base / Optimism** 。**切勿选 TRC20（波场）**——该地址在波场上不存在，充必丢。
+
+---
+
+## 目录
+
+- [🏆 完整排行榜](#-完整排行榜)
+- [❓ 常见问题](#-常见问题)
+- [📊 分类](#-分类)
+- [📝 评测](#-评测)
+- [⚠️ 黑名单](#️-黑名单)
+- [🧪 基准测试](#-基准测试)
+- [🤝 贡献](#-贡献)
+- [📜 许可证](#-许可证)
+
+---
+
+## 🏆 完整排行榜
+
+每日 **新加坡时间 10:00 (UTC+8)** 自动生成。查看 [评分方法](./reviews/methodology.md) · [历史存档](./data/history/) · [原始数据](./data/gateways.json)
+
+**🔌 = 已确认的 `/v1/models` 端点（真 API，不是单纯展示页）**
+
+<details>
+<summary><b>📊 点击展开完整榜单</b></summary>
+
+<!-- LEADERBOARD_ZH:BEGIN -->
+_Last updated: 2026-10-21 15:03 (SGT)_
+
+**合计 185 个中转站** · 🔌 **88 个已确认 `/v1/models` 端点** · 🟢 已验证 117 · 🟡 疑似 6 · 🧰 开源 3 · 🔍 待复核 59
+
+**主流引擎分布：** `new-api` × 36 · `one-api` × 17 · `dify` × 4 · `openrouter` × 2 · `litellm` × 2
+
+| # | 中转站 | 地区 | API | 模型 | 引擎 | 支付 | 评分 | 响应 | 分类 |
+|---|--------|------|-----|------|------|------|------|------|------|
+| 🥇 | [PackyAPI (PackyCode)](https://www.packyapi.com) | cn | 🔌 | claude, gpt, gemini | — | wechat | 9.9 | 128 ms | 🟢 已验证 |
+| 🥈 | [BUZZ](https://buzzai.cc) | cn | 🔌 | claude, gpt, gemini | one-api | card | 9.9 | 141 ms | 🟢 已验证 |
+| 🥉 | [呆呆兽中转站｜Claude、Codex、GLM、Kimi 折扣 API](https://www.ddshub.cc) | cn | 🔌 | claude, gpt, anthropic | — | alipay, wechat, card | 9.9 | 307 ms | 🟢 已验证 |
+| 4 | [AIHubMix](https://aihubmix.com) | global | 🔌 | **500 models** | one-api | — | 9.9 | 424 ms | 🟢 已验证 |
+| 5 | [Avian](https://avian.io) | global | 🔌 | **19 models** | — | — | 9.9 | 658 ms | 🟢 已验证 |
+| 6 | [APIMart](https://apimart.ai) | global | 🔌 | claude, gpt, gemini | one-api | wechat, card | 9.9 | 1019 ms | 🟢 已验证 |
+| 7 | [api.v3.cm](https://api.v3.cm) | cn | 🔌 | claude, gpt, gemini | — | — | 9.8 | 140 ms | 🟢 已验证 |
+| 8 | [api.v36.cm](https://api.v36.cm) | cn | 🔌 | claude, gpt, gemini | — | — | 9.8 | 153 ms | 🟢 已验证 |
+| 9 | [钱多多 API｜OpenAI 兼容的大模型统一接口](https://aigcbest.top) | cn | 🔌 | claude, gpt, gemini | dify | — | 9.8 | 240 ms | 🟢 已验证 |
+| 10 | [api.gpt.ge](https://api.gpt.ge) | cn | 🔌 | claude, gpt, gemini | — | — | 9.8 | 243 ms | 🟢 已验证 |
+| 11 | [api.vveai.com](https://api.vveai.com) | cn | 🔌 | claude, gpt, gemini | — | — | 9.8 | 283 ms | 🟢 已验证 |
+| 12 | [OpenRouter](https://openrouter.ai) | global | 🔌 | claude, gpt, gemini | openrouter | — | 9.8 | 287 ms | 🟢 已验证 |
+| 13 | [Doro AI](https://doro.lol) | cn | 🔌 | claude, gpt, gemini | new-api | — | 9.8 | 297 ms | 🟢 已验证 |
+| 14 | [Featherless](https://featherless.ai) | global | 🔌 | gpt, openai, deepseek | one-api | — | 9.8 | 416 ms | 🟢 已验证 |
+| 15 | [Yuegle API](https://api.yuegle.com) | cn | 🔌 | claude, gpt, gemini | — | — | 9.8 | 535 ms | 🟢 已验证 |
+| 16 | [ePhone AI](https://api.ephone.ai) | cn | 🔌 | claude, gpt, gemini | — | — | 9.8 | 719 ms | 🟢 已验证 |
+| 17 | [jeniya.cn](https://jeniya.cn) | cn | 🔌 | claude, gpt, chatgpt | — | — | 9.8 | 1243 ms | 🟢 已验证 |
+| 18 | [AnyRouter · Universal AI Model Router](https://anyrouter.dev) | global | 🔌 | claude, anthropic, openai | one-api | — | 9.8 | 1407 ms | 🟢 已验证 |
+| 19 | [便携AI聚合API](https://api.bianxieai.com) | cn | 🔌 | claude, gemini, openai | new-api | — | 9.8 | 1717 ms | 🟢 已验证 |
+| 20 | [ggwk1.online](https://www.ggwk1.online) | cn | 🔌 | claude, gpt, gemini | new-api | — | 9.7 | 343 ms | 🟢 已验证 |
+| 21 | [api-gptgod-work](https://api.gptgod.work) | global | 🔌 | **193 models** | — | — | 9.7 | 530 ms | 🟢 已验证 |
+| 22 | [ClaudeCN](https://claudecn.top) | cn | 🔌 | claude, gpt, gemini | — | — | 9.7 | 970 ms | 🟢 已验证 |
+| 23 | [Aiberm](https://aiberm.com) | global | 🔌 | claude, gemini, openai | — | — | 9.6 | 112 ms | 🟢 已验证 |
+| 24 | [new.yunai.link](https://new.yunai.link) | cn | 🔌 | claude, gemini, openai | — | — | 9.6 | 167 ms | 🟢 已验证 |
+| 25 | [api-holdai-top](https://api.holdai.top) | cn | 🔌 | claude, gemini, openai | — | — | 9.6 | 169 ms | 🟢 已验证 |
+| 26 | [api.soruxgpt.com](https://api.soruxgpt.com) | cn | 🔌 | claude, gemini, openai | new-api | — | 9.6 | 231 ms | 🟢 已验证 |
+| 27 | [api.onechats.top](https://api.onechats.top) | cn | 🔌 | claude, gemini, openai | new-api | — | 9.6 | 255 ms | 🟢 已验证 |
+| 28 | [api.cursorai.art](https://api.cursorai.art) | global | 🔌 | claude, gpt, chatgpt | — | — | 9.6 | 333 ms | 🟢 已验证 |
+| 29 | [柏拉图AI_API中转站 (api.bltcy.top)](https://api.bltcy.top) | cn | 🔌 | claude, gpt, openai | — | — | 9.6 | 404 ms | 🟢 已验证 |
+| 30 | [RightCode](https://www.right.codes) | cn | 🔌 | claude, gemini, openai | — | — | 9.6 | 462 ms | 🟢 已验证 |
+| 31 | [柏拉图AI_API中转站 (api.bltcy.ai)](https://api.bltcy.ai) | cn | 🔌 | claude, gpt, openai | — | — | 9.6 | 549 ms | 🟢 已验证 |
+| 32 | [api-chatfire-cn](https://api.chatfire.cn) | cn | 🔌 | claude, gemini, openai | — | — | 9.6 | 556 ms | 🟢 已验证 |
+| 33 | [api.aipaibox.com](https://api.aipaibox.com) | cn | 🔌 | claude, gemini, openai | new-api | — | 9.6 | 708 ms | 🟢 已验证 |
+| 34 | [api-mnapi-com](https://api.mnapi.com) | cn | 🔌 | claude, gemini, openai | — | — | 9.6 | 873 ms | 🟢 已验证 |
+| 35 | [TiMi CC](https://timicc.com) | cn | 🔌 | gpt, openai, qwen | — | wechat, card | 9.5 | 314 ms | 🟢 已验证 |
+| 36 | [comfly](https://ai.comfly.chat) | global | 🔌 | gpt, openai | — | — | 9.5 | 938 ms | 🟢 已验证 |
+| 37 | [Tokencloud.ai](https://ai.tokencloud.ai) | global | 🔌 | — | — | wechat | 9.5 | 1348 ms | 🟢 已验证 |
+| 38 | [钱多多 API (api.ifopen.ai)](https://api.ifopen.ai) | cn | 🔌 | openai | new-api | — | 9.4 | 187 ms | 🟢 已验证 |
+| 39 | [zen-ai.top](https://zen-ai.top) | cn | 🔌 | openai | — | — | 9.4 | 265 ms | 🟢 已验证 |
+| 40 | [钱多多 API (api.aigcbest.top)](https://api.aigcbest.top) | cn | 🔌 | openai | new-api | — | 9.4 | 322 ms | 🟢 已验证 |
+| 41 | [钱多多 API (35.aigcbest.top)](https://35.aigcbest.top) | cn | 🔌 | openai | new-api | — | 9.4 | 327 ms | 🟢 已验证 |
+| 42 | [API Management](https://sparkcode.top) | cn | 🔌 | openai | — | — | 9.4 | 367 ms | 🟢 已验证 |
+| 43 | [GPTNB ONEAPI](https://oneapi.gptnb.ai) | cn | 🔌 | gpt | — | — | 9.4 | 455 ms | 🟢 已验证 |
+| 44 | [Unified API](https://unifiedapi.cloud) | cn | 🔌 | openai | — | — | 9.4 | 618 ms | 🟢 已验证 |
+| 45 | [AI302 Api (api.302ai.com)](https://api.302ai.com) | global | 🔌 | gpt | — | — | 9.4 | 639 ms | 🟢 已验证 |
+| 46 | [AI302 Api (api.302ai.cn)](https://api.302ai.cn) | global | 🔌 | gpt | — | — | 9.4 | 1318 ms | 🟢 已验证 |
+| 47 | [LaoZhang API](https://api.laozhang.ai) | global | 🔌 | — | — | — | 9.3 | 95 ms | 🟢 已验证 |
+| 48 | [Ai实验室](https://www.openai-labs.com) | cn | 🔌 | — | — | — | 9.3 | 111 ms | 🟢 已验证 |
+| 49 | [KKSJ API](https://cnapi.kksj.org) | global | 🔌 | — | new-api | — | 9.3 | 157 ms | 🟢 已验证 |
+| 50 | [zerocode.sbs](https://zerocode.sbs) | global | 🔌 | — | new-api | — | 9.3 | 177 ms | 🟢 已验证 |
+
+> 仅展示 Top 50。完整 185 个榜单见 [`data/_leaderboard.zh.md`](data/_leaderboard.zh.md)。
+
+<!-- LEADERBOARD_ZH:END -->
+
+</details>
+
+> 📌 **想上榜?** 用[中转站模板](./gateways/_template.md)提交 PR,符合[收录标准](./CONTRIBUTING.md#收录标准)即可收录。
+
+---
+
+## ❓ 常见问题
+
+<details>
+<summary><b>什么是“AI API 中转站”？</b></summary>
+
+第三方服务，通过**统一的 OpenAI 兼容 HTTP 接口**转发 Claude、GPT、Gemini、DeepSeek、Qwen 等前沿大模型。大多数在官方供应商前面做代理，通常价格更低、支持微信／支付宝、附带限流池或日志等功能。
+</details>
+
+<details>
+<summary><b>和 OpenRouter 官方列表／helpaio／apicompare 有什么不同？</b></summary>
+
+- **OpenRouter** 只列接入自家路由图的站点；我们列全球所有能找到的中转站，包括国内几十个小站。
+- **helpaio.com** 是人工评测博客；我们同时提供**机器验证数据**（实时 `/v1/models` 探测、引擎指纹、在线率）。
+- **apicompare.best** 比价；我们优先比的是**可达性、真实性、稳定性**——再便宜没直播一跑路也白搭。
+</details>
+
+<details>
+<summary><b>榜单分数怎么算的？</b></summary>
+
+综合：可达性（HTTP 2xx）、`/v1/models` 接口确认、真实模型数量、首页模型关键词密度、响应时间、3 十天在线率。公式写在 [`scripts/generate_leaderboard.py`](./scripts/generate_leaderboard.py)——无黑盒。
+</details>
+
+<details>
+<summary><b>这是收费目录吗？有人付费买排名吗？</b></summary>
+
+**没有。** 零付费位。收录靠自动发现 + 社区 PR。仓库 MIT 开源，无广告。觉得有用欢迎[赞助](#-赞助本项目)。
+</details>
+
+<details>
+<summary><b>靠谱的榜首可以大额充值吗？</b></summary>
+
+**不行。** 这个行业每周都有跑路。高分只意味着**当下**能打通、有真 API、最近 30 天稳定——不代表明天不跑。始终先小额充值（≤ ¥10）、验证模型质量、分批加码。
+</details>
+
+<details>
+<summary><b>被某个中转站骗了，怎么举报？</b></summary>
+
+到 [GitHub Discussions](https://github.com/MackDing/awesome-ai-api/discussions) 的 `Reports` 分类发帖，附公开证据（截图、交易 ID、群组链接）。2 条独立举报 + 14 天答辩窗口 = 该站入 [`data/blacklist.json`](./data/blacklist.json)。
+</details>
+
+<details>
+<summary><b>怎么添加我自己的中转站？</b></summary>
+
+将 URL 加到 [`data/candidates.txt`](./data/candidates.txt)，选填：在 [`data/sites.yaml`](./data/sites.yaml) 里写人工校对的 `name` / `region` / `verdict`。提 PR，每日 cron 会自动收录。
+</details>
+
+<details>
+<summary><b>支持非 OpenAI 兼容的 API吗（原生 Anthropic／Gemini）？</b></summary>
+
+我们以 `/v1/models` 为探测默认——这是行业通语。如果某站只暴露原生 Anthropic 或 Gemini 接口，可以在 `data/sites.yaml` 里写 `verdict: likely_relay` 覆盖，并在 `note` 里标明协议。
+</details>
+
+---
+
+## 📊 分类
+
+### 按目标市场
+
+- 🌍 [全球中转站](./data/by-region.md#global) — OpenRouter, Together AI, Groq, Fireworks
+- 🇨🇳 [国内中转站](./data/by-region.md#china) — Road2All, DeepBricks, AiHubMix, OhMyGPT
+- 🏠 [自部署方案](./data/by-region.md#self-hosted) — One API, NewAPI, LiteLLM
+
+### 按特色
+
+- 🤖 [Claude Code 兼容](./data/by-feature.md#claude-code) — 完整支持 Claude Code CLI
+- ⚡ [低延迟](./data/by-feature.md#low-latency) — TTFT 低于 500ms
+- 💰 [低价优选](./data/by-feature.md#best-price) — 相较官方有显著折扣
+- 🔒 [隐私优先](./data/by-feature.md#privacy) — 无数据留存 / 可私有部署
+
+### 按支付方式
+
+- 💳 [支付宝/微信](./data/by-payment.md#cn) — 国内用户友好
+- 💳 [信用卡](./data/by-payment.md#card) — 国际通用
+- ₿ [加密货币](./data/by-payment.md#crypto) — 匿名支付
+
+---
+
+## 📝 评测
+
+深度评测和基准报告:
+
+- 📊 [2026 Q2 中转站基准测试](./reviews/2026-Q2-benchmark.md) *(即将发布)*
+- 🔬 [Claude Code 中转站横评](./reviews/claude-code-shootout.md) *(即将发布)*
+- 💸 [价格分析: 官方 vs 中转](./reviews/pricing-analysis.md) *(即将发布)*
+- 🧪 [评分方法论](./reviews/methodology.md)
+
+---
+
+## ⚠️ 黑名单
+
+被标记存在严重问题的中转站(跑路、数据泄漏、模型造假)。
+
+详见 [blacklist.md](./data/blacklist.md),含事件证据归档。
+
+> 如果你被某中转站坑过,请在 GitHub Discussion 提交证据。我们会公开透明地处理。
+
+---
+
+## 🧪 基准测试
+
+我们定期运行基准测试,评估:
+
+- **延迟** (TTFT, 总响应时间)
+- **吞吐** (tokens/秒)
+- **稳定性** (在线率 %)
+- **准确度** (模型行为是否与官方一致)
+- **计费一致性** (报价 vs 实际扣费)
+
+测试脚本见 [`scripts/benchmark.py`](./scripts/benchmark.py),结果在 [`data/benchmarks/`](./data/benchmarks/)。
+
+---
+
+## 🤝 贡献
+
+欢迎用户、中转站运营方、研究者提交 PR。详见 [CONTRIBUTING.md](./CONTRIBUTING.md)。
+
+**快速贡献:**
+- ✏️ 更新某中转站的价格或模型列表
+- 📝 提交新中转站(用[模板](./gateways/_template.md))
+- 🚨 举报跑路或故障
+- 🧪 提交基准测试数据
+- 🌐 改善翻译
+
+---
+
+## 📜 许可证
+
+内容基于 [MIT License](./LICENSE) 发布。鼓励署名但不强制。
+
+---
+
+## 🙏 致谢
+
+灵感来源: [apicompare.best](https://apicompare.best)、[helpaio.com/transit](https://www.helpaio.com/transit)、[trustmrr.com](https://trustmrr.com) — 它们分别启发了我们的**价格数据、内容深度、可验证信任**三个维度。我们把它们融合进 GitHub 原生的开放性中。
+
+---
+
+<p align="center">
+  <em>由 <a href="https://github.com/MackDing">Mack Ding</a> 和贡献者共建 · 献给全球 OPC 社区</em>
+</p>
