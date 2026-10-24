@@ -99,7 +99,7 @@ def build_rss():
     rss = f"""<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0"><channel>
   <title>awesome-ai-api — daily leaderboard</title>
-  <link>https://mackding.github.io/awesome-ai-api/</link>
+  <link>https://1261398983.github.io/awesome-ai-api/</link>
   <description>Daily-refreshed leaderboard of AI API gateways. Updated: {escape(updated)}.</description>
   <language>en</language>
   <lastBuildDate>{datetime.now(SGT).strftime('%a, %d %b %Y %H:%M:%S +0800')}</lastBuildDate>
@@ -121,7 +121,7 @@ def build_llms_full():
         "",
         "> Full, machine-readable leaderboard of AI API gateways, formatted for LLM ingestion.",
         f"> Snapshot: {data.get('updated_at','?')}. Total: {len(gws)}. API-confirmed: {api_count}.",
-        "> Canonical site: https://mackding.github.io/awesome-ai-api/",
+        "> Canonical site: https://1261398983.github.io/awesome-ai-api/",
         "> Source repo: https://github.com/MackDing/awesome-ai-api",
         "> License: MIT (code) + CC0 (data)",
         "",
@@ -275,12 +275,12 @@ def build_gateway_pages():
             "isPartOf": {
                 "@type": "Dataset",
                 "name": "awesome-ai-api leaderboard",
-                "url": "https://mackding.github.io/awesome-ai-api/",
+                "url": "https://1261398983.github.io/awesome-ai-api/",
             },
         }
 
         models_str = ", ".join(models) or "—"
-        page_url = f"https://mackding.github.io/awesome-ai-api/g/{slug}/"
+        page_url = f"https://1261398983.github.io/awesome-ai-api/g/{slug}/"
 
         html = f"""<!doctype html>
 <html lang="en">
@@ -294,7 +294,7 @@ def build_gateway_pages():
 <meta property="og:title" content="{escape(name)} — score {score}/10 on awesome-ai-api">
 <meta property="og:description" content="{region} · {engine} · {api_txt_en}">
 <meta property="og:url" content="{page_url}">
-<meta property="og:image" content="https://mackding.github.io/awesome-ai-api/og-image.png">
+<meta property="og:image" content="https://1261398983.github.io/awesome-ai-api/og-image.png">
 <meta name="twitter:card" content="summary_large_image">
 <!-- Chinese search engines -->
 <meta name="baidu-site-verification" content="">
@@ -351,6 +351,12 @@ def build_gateway_pages():
 <p><a class="cta" href="{escape(url)}" rel="nofollow noopener">Visit {escape(name)} →</a></p>
 
 <hr>
+<div style="max-width:900px;margin:32px auto 0;padding:18px 22px;border:1px solid #24304a;border-radius:12px;background:#0e1524;font:14px/1.75 -apple-system,'Segoe UI',sans-serif;color:#c7d3e8">
+  <strong style="color:#e8eef9">API endpoint used in these examples</strong>: <code style="background:#16203a;padding:1px 6px;border-radius:4px">https://api.97wl.cc/v1</code><br>
+  Sign up with any QQ email, no invite code, pay-as-you-go; enter a channel code at signup for extra credit.
+  <a href="https://api.97wl.cc/register" style="color:#5b9dff;text-decoration:none;font-weight:600">→ Sign up</a>
+  · <a href="https://1261398983.github.io/ai-api-guide/" style="color:#8fb8e8;text-decoration:none">Setup guide</a>
+</div>
 <p class="note">Data licensed CC0. This page is auto-generated from <a href="https://github.com/MackDing/awesome-ai-api">awesome-ai-api</a>. Operator of {escape(name)} can request removal via PR to <code>data/sites.yaml</code>.</p>
 </body>
 </html>
@@ -393,7 +399,7 @@ def build_engine_pages():
         d.mkdir(exist_ok=True)
 
         blurb = blurbs.get(engine, f"Gateways running the {engine} engine, tracked daily by awesome-ai-api.")
-        page_url = f"https://mackding.github.io/awesome-ai-api/engine/{engine}/"
+        page_url = f"https://1261398983.github.io/awesome-ai-api/engine/{engine}/"
 
         rows = []
         for i, g in enumerate(entries[:50], start=1):
@@ -438,7 +444,7 @@ def build_engine_pages():
 <meta property="og:title" content="{len(entries)} gateways running {engine}">
 <meta property="og:description" content="{blurb[:160]}">
 <meta property="og:url" content="{page_url}">
-<meta property="og:image" content="https://mackding.github.io/awesome-ai-api/og-image.png">
+<meta property="og:image" content="https://1261398983.github.io/awesome-ai-api/og-image.png">
 <style>
   body{{font-family:-apple-system,Segoe UI,Helvetica Neue,sans-serif;max-width:820px;margin:0 auto;padding:2rem 1rem;color:#e0e6f0;background:#0d1117;line-height:1.55}}
   a{{color:#58a6ff}}
@@ -462,6 +468,12 @@ def build_engine_pages():
   </tbody>
 </table>
 
+<div style="max-width:900px;margin:28px auto 0;padding:16px 20px;border:1px solid #24304a;border-radius:12px;background:#0e1524;font:14px/1.7 -apple-system,'Segoe UI',sans-serif;color:#c7d3e8">
+  <strong style="color:#e8eef9">API endpoint used in these examples</strong>: <code style="background:#16203a;padding:1px 6px;border-radius:4px">https://api.97wl.cc/v1</code><br>
+  Sign up with any QQ email, no invite code, pay-as-you-go.
+  <a href="https://api.97wl.cc/register" style="color:#5b9dff;text-decoration:none;font-weight:600">→ Sign up</a>
+</div>
+
 <p><small>Data CC0 · Updated {data.get('updated','—')} · <a href="/awesome-ai-api/reviews/methodology.md">methodology</a></small></p>
 </body>
 </html>
@@ -480,15 +492,16 @@ def build_sitemap():
     today = datetime.now(SGT).strftime("%Y-%m-%d")
 
     urls = [
-        ("https://mackding.github.io/awesome-ai-api/", "1.0", "daily"),
-        ("https://mackding.github.io/awesome-ai-api/zh/", "1.0", "daily"),
+        ("https://1261398983.github.io/awesome-ai-api/", "1.0", "daily"),
+        ("https://1261398983.github.io/awesome-ai-api/zh/", "1.0", "daily"),
+        ("https://1261398983.github.io/awesome-ai-api/all/", "0.8", "weekly"),
     ]
     for g in gws:
         slug = g.get("slug")
         if slug:
-            urls.append((f"https://mackding.github.io/awesome-ai-api/g/{slug}/", "0.6", "weekly"))
+            urls.append((f"https://1261398983.github.io/awesome-ai-api/g/{slug}/", "0.6", "weekly"))
     for e in engines:
-        urls.append((f"https://mackding.github.io/awesome-ai-api/engine/{e}/", "0.7", "weekly"))
+        urls.append((f"https://1261398983.github.io/awesome-ai-api/engine/{e}/", "0.7", "weekly"))
 
     parts = [
         '<?xml version="1.0" encoding="UTF-8"?>',
@@ -502,18 +515,18 @@ def build_sitemap():
     # EN ↔ ZH hreflang for the two main pages
     parts[2] = (
         '  <url>\n'
-        '    <loc>https://mackding.github.io/awesome-ai-api/</loc>\n'
+        '    <loc>https://1261398983.github.io/awesome-ai-api/</loc>\n'
         f'    <lastmod>{today}</lastmod><changefreq>daily</changefreq><priority>1.0</priority>\n'
-        '    <xhtml:link rel="alternate" hreflang="en" href="https://mackding.github.io/awesome-ai-api/"/>\n'
-        '    <xhtml:link rel="alternate" hreflang="zh" href="https://mackding.github.io/awesome-ai-api/zh/"/>\n'
+        '    <xhtml:link rel="alternate" hreflang="en" href="https://1261398983.github.io/awesome-ai-api/"/>\n'
+        '    <xhtml:link rel="alternate" hreflang="zh" href="https://1261398983.github.io/awesome-ai-api/zh/"/>\n'
         '  </url>'
     )
     parts[3] = (
         '  <url>\n'
-        '    <loc>https://mackding.github.io/awesome-ai-api/zh/</loc>\n'
+        '    <loc>https://1261398983.github.io/awesome-ai-api/zh/</loc>\n'
         f'    <lastmod>{today}</lastmod><changefreq>daily</changefreq><priority>1.0</priority>\n'
-        '    <xhtml:link rel="alternate" hreflang="en" href="https://mackding.github.io/awesome-ai-api/"/>\n'
-        '    <xhtml:link rel="alternate" hreflang="zh" href="https://mackding.github.io/awesome-ai-api/zh/"/>\n'
+        '    <xhtml:link rel="alternate" hreflang="en" href="https://1261398983.github.io/awesome-ai-api/"/>\n'
+        '    <xhtml:link rel="alternate" hreflang="zh" href="https://1261398983.github.io/awesome-ai-api/zh/"/>\n'
         '  </url>'
     )
     parts.append("</urlset>")
@@ -535,9 +548,9 @@ def build_ai_manifest():
         "auth": {"type": "none"},
         "api": {
             "type": "openapi",
-            "url": "https://mackding.github.io/awesome-ai-api/.well-known/openapi.yaml",
+            "url": "https://1261398983.github.io/awesome-ai-api/.well-known/openapi.yaml",
         },
-        "logo_url": "https://mackding.github.io/awesome-ai-api/og-image.png",
+        "logo_url": "https://1261398983.github.io/awesome-ai-api/og-image.png",
         "contact_email": "noreply@github.com",
         "legal_info_url": "https://github.com/MackDing/awesome-ai-api",
     }
@@ -550,7 +563,7 @@ info:
   description: Static JSON dataset of AI API gateways, refreshed daily.
   license: { name: CC0, url: https://creativecommons.org/publicdomain/zero/1.0/ }
 servers:
-  - url: https://mackding.github.io/awesome-ai-api
+  - url: https://1261398983.github.io/awesome-ai-api
 paths:
   /gateways.json:
     get:
@@ -582,21 +595,21 @@ paths:
         "# awesome-ai-api",
         "",
         "> Daily-refreshed leaderboard of 200+ AI API gateways (OpenAI-compatible relays).",
-        "> License: MIT (code) + CC0 (data). Canonical: https://mackding.github.io/awesome-ai-api/",
+        "> License: MIT (code) + CC0 (data). Canonical: https://1261398983.github.io/awesome-ai-api/",
         "",
         "## Primary resources",
-        "- [Full dataset JSON](https://mackding.github.io/awesome-ai-api/gateways.json)",
-        "- [Full dataset CSV](https://mackding.github.io/awesome-ai-api/gateways.csv)",
-        "- [RSS feed (Top 20)](https://mackding.github.io/awesome-ai-api/feed.xml)",
-        "- [Full plaintext dump](https://mackding.github.io/awesome-ai-api/llms-full.txt)",
-        "- [OpenAPI spec](https://mackding.github.io/awesome-ai-api/.well-known/openapi.yaml)",
+        "- [Full dataset JSON](https://1261398983.github.io/awesome-ai-api/gateways.json)",
+        "- [Full dataset CSV](https://1261398983.github.io/awesome-ai-api/gateways.csv)",
+        "- [RSS feed (Top 20)](https://1261398983.github.io/awesome-ai-api/feed.xml)",
+        "- [Full plaintext dump](https://1261398983.github.io/awesome-ai-api/llms-full.txt)",
+        "- [OpenAPI spec](https://1261398983.github.io/awesome-ai-api/.well-known/openapi.yaml)",
         "- [Scoring methodology](https://github.com/MackDing/awesome-ai-api/blob/master/reviews/methodology.md)",
         "",
         "## Top 20 gateways (detailed pages)",
     ]
     for i, g in enumerate(top, start=1):
         lines.append(
-            f"- [{g.get('name','?')}](https://mackding.github.io/awesome-ai-api/g/{g.get('slug')}/) "
+            f"- [{g.get('name','?')}](https://1261398983.github.io/awesome-ai-api/g/{g.get('slug')}/) "
             f"— score {g.get('score','—')}, {'API✓' if g.get('has_api') else 'unverified'}, engine {g.get('engine') or 'unknown'}"
         )
     (DOCS / "llms.txt").write_text("\n".join(lines) + "\n", encoding="utf-8")

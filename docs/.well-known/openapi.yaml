@@ -5,7 +5,7 @@ info:
   description: Static JSON dataset of AI API gateways, refreshed daily.
   license: { name: CC0, url: https://creativecommons.org/publicdomain/zero/1.0/ }
 servers:
-  - url: https://mackding.github.io/awesome-ai-api
+  - url: https://1261398983.github.io/awesome-ai-api
 paths:
   /gateways.json:
     get:
