@@ -306,7 +306,7 @@ def build_gateway_pages():
 <meta name="keywords" content="{escape(name)}, {escape(name)} 中转, {escape(name)} API, AI API gateway, {engine}, /v1/models, OpenAI compatible, Claude relay, GPT API">
 <link rel="canonical" href="{page_url}">
 <meta property="og:title" content="{escape(name)} — score {score}/10 on awesome-ai-api">
-<meta property="og:description" content="{region} · {engine} · {api_txt_en}">
+<meta property="og:description" content="{escape(clamp_desc(f"""{name} ({region}) scores {score}/10 on the awesome-ai-api leaderboard. Engine: {engine}. {'Verified /v1/models' if api else 'Unverified endpoint'}. Updated daily."""))}">
 <meta property="og:url" content="{page_url}">
 <meta property="og:image" content="https://1261398983.github.io/awesome-ai-api/og-image.png">
 <meta name="twitter:card" content="summary_large_image">
