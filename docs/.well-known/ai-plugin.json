@@ -9,9 +9,9 @@
   },
   "api": {
     "type": "openapi",
-    "url": "https://mackding.github.io/awesome-ai-api/.well-known/openapi.yaml"
+    "url": "https://1261398983.github.io/awesome-ai-api/.well-known/openapi.yaml"
   },
-  "logo_url": "https://mackding.github.io/awesome-ai-api/og-image.png",
+  "logo_url": "https://1261398983.github.io/awesome-ai-api/og-image.png",
   "contact_email": "noreply@github.com",
   "legal_info_url": "https://github.com/MackDing/awesome-ai-api"
 }

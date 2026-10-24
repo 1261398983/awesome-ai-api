@@ -25,6 +25,6 @@ A curated, actively maintained directory of AI API providers — gateways, relay
 ## Links
 
 - Repository: https://github.com/MackDing/awesome-ai-api
-- Live leaderboard: https://mackding.github.io/awesome-ai-api/
+- Live leaderboard: https://1261398983.github.io/awesome-ai-api/
 - Author: https://github.com/MackDing
 - OPC Hub: https://opc.ren

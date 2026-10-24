@@ -2,7 +2,7 @@
 
 > Full, machine-readable leaderboard of AI API gateways, formatted for LLM ingestion.
 > Snapshot: 2026-10-21 15:03 SGT. Total: 185. API-confirmed: 88.
-> Canonical site: https://mackding.github.io/awesome-ai-api/
+> Canonical site: https://1261398983.github.io/awesome-ai-api/
 > Source repo: https://github.com/MackDing/awesome-ai-api
 > License: MIT (code) + CC0 (data)
 
