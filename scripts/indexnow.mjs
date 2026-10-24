@@ -10,7 +10,7 @@ import fs from 'node:fs';
 
 const KEY = '5274d490c7073e9630ce4cc455bb9c41';
 const HOST = '1261398983.github.io';
-const SITEMAP = process.env.SITEMAP || 'sitemap.xml';
+const SITEMAP = process.env.SITEMAP || (fs.existsSync('sitemap.xml') ? 'sitemap.xml' : 'docs/sitemap.xml');
 
 const xml = fs.readFileSync(SITEMAP, 'utf8');
 let urls = [...xml.matchAll(/<loc>\s*(.*?)\s*<\/loc>/g)].map((m) => m[1].trim());
