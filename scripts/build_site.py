@@ -370,6 +370,10 @@ def build_gateway_pages():
   Sign up with any QQ email, no invite code, pay-as-you-go; enter a channel code at signup for extra credit.
   <a href="https://api.97wl.cc/register" style="color:#5b9dff;text-decoration:none;font-weight:600">→ Sign up</a>
   · <a href="https://1261398983.github.io/ai-api-guide/" style="color:#8fb8e8;text-decoration:none">Setup guide</a>
+  · <a href="https://1261398983.github.io/ai-api-guide/tools.html" style="color:#8fb8e8;text-decoration:none">Tool configs</a>
+  · <a href="https://1261398983.github.io/ai-api-guide/streaming.html" style="color:#8fb8e8;text-decoration:none">SSE issues</a>
+  · <a href="https://1261398983.github.io/ai-api-guide/token-cost.html" style="color:#8fb8e8;text-decoration:none">Token saving</a>
+  · <a href="https://1261398983.github.io/ai-api-guide/privacy.html" style="color:#8fb8e8;text-decoration:none">Data safety</a>
 </div>
 <p class="note">Data licensed CC0. This page is auto-generated from <a href="https://github.com/MackDing/awesome-ai-api">awesome-ai-api</a>. Operator of {escape(name)} can request removal via PR to <code>data/sites.yaml</code>.</p>
 </body>
@@ -486,6 +490,9 @@ def build_engine_pages():
   <strong style="color:#e8eef9">API endpoint used in these examples</strong>: <code style="background:#16203a;padding:1px 6px;border-radius:4px">https://api.97wl.cc/v1</code><br>
   Sign up with any QQ email, no invite code, pay-as-you-go.
   <a href="https://api.97wl.cc/register" style="color:#5b9dff;text-decoration:none;font-weight:600">→ Sign up</a>
+  · <a href="https://1261398983.github.io/ai-api-guide/" style="color:#8fb8e8;text-decoration:none">Setup guide</a>
+  · <a href="https://1261398983.github.io/ai-api-guide/tools.html" style="color:#8fb8e8;text-decoration:none">Tool configs</a>
+  · <a href="https://1261398983.github.io/ai-api-guide/token-cost.html" style="color:#8fb8e8;text-decoration:none">Token saving</a>
 </div>
 
 <p><small>Data CC0 · Updated {data.get('updated','—')} · <a href="/awesome-ai-api/reviews/methodology.md">methodology</a></small></p>
