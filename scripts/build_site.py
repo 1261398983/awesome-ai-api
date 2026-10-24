@@ -287,7 +287,7 @@ def build_gateway_pages():
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>{escape(name)} — AI API gateway review, score, uptime | awesome-ai-api</title>
+<title>{escape(name)} — AI API gateway score &amp; uptime</title>
 <meta name="description" content="{escape(name)} ({region}) scores {score}/10 on the awesome-ai-api leaderboard. Engine: {engine}. {'Verified /v1/models' if api else 'Unverified endpoint'}. Updated daily. {escape(name)} 中转站评测 / 可用性监控 / 分数 {score}/10.">
 <meta name="keywords" content="{escape(name)}, {escape(name)} 中转, {escape(name)} API, AI API gateway, {engine}, /v1/models, OpenAI compatible, Claude relay, GPT API">
 <link rel="canonical" href="{page_url}">
@@ -437,7 +437,7 @@ def build_engine_pages():
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>{len(entries)} gateways running {engine} — awesome-ai-api</title>
+<title>{len(entries)} {engine} gateways — AI API directory</title>
 <meta name="description" content="{len(entries)} AI API gateways running the {engine} engine, verified daily. {blurb[:120]}">
 <meta name="keywords" content="{engine}, {engine} gateway, {engine} API, AI relay, OpenAI compatible gateway, {engine} 中转站">
 <link rel="canonical" href="{page_url}">
