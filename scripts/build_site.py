@@ -27,6 +27,20 @@ DOCS = ROOT / "docs"
 DOCS.mkdir(exist_ok=True)
 
 
+def clamp_desc(text, max_width=155):
+    """Truncate by display width (CJK = 2). Search snippets show ~155-160 units."""
+    width = 0
+    out = []
+    for ch in str(text or ""):
+        cw = 2 if ord(ch) > 127 else 1
+        if width + cw > max_width - 1:
+            out.append("...")
+            break
+        width += cw
+        out.append(ch)
+    return "".join(out)
+
+
 def copy_gateways():
     src = DATA / "gateways.json"
     dst = DOCS / "gateways.json"
@@ -288,7 +302,7 @@ def build_gateway_pages():
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{escape(name)} — AI API gateway score &amp; uptime</title>
-<meta name="description" content="{escape(name)} ({region}) scores {score}/10 on the awesome-ai-api leaderboard. Engine: {engine}. {'Verified /v1/models' if api else 'Unverified endpoint'}. Updated daily. {escape(name)} 中转站评测 / 可用性监控 / 分数 {score}/10.">
+<meta name="description" content="{escape(clamp_desc(f"""{escape(name)} ({region}) scores {score}/10 on the awesome-ai-api leaderboard. Engine: {engine}. {'Verified /v1/models' if api else 'Unverified endpoint'}. Updated daily. {escape(name)} 中转站评测 / 可用性监控 / 分数 {score}/10."""))}">
 <meta name="keywords" content="{escape(name)}, {escape(name)} 中转, {escape(name)} API, AI API gateway, {engine}, /v1/models, OpenAI compatible, Claude relay, GPT API">
 <link rel="canonical" href="{page_url}">
 <meta property="og:title" content="{escape(name)} — score {score}/10 on awesome-ai-api">
@@ -438,7 +452,7 @@ def build_engine_pages():
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{len(entries)} {engine} gateways — AI API directory</title>
-<meta name="description" content="{len(entries)} AI API gateways running the {engine} engine, verified daily. {blurb[:120]}">
+<meta name="description" content="{escape(clamp_desc(f"""{len(entries)} AI API gateways running the {engine} engine, verified daily. {blurb[:120]}"""))}">
 <meta name="keywords" content="{engine}, {engine} gateway, {engine} API, AI relay, OpenAI compatible gateway, {engine} 中转站">
 <link rel="canonical" href="{page_url}">
 <meta property="og:title" content="{len(entries)} gateways running {engine}">
