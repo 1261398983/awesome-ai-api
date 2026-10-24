@@ -314,3 +314,16 @@ Inspired by [apicompare.best](https://apicompare.best), [helpaio.com/transit](ht
 | [**claude-context-health**](https://github.com/MackDing/claude-context-health) | Diagnose & fix Claude Code session degradation |
 | [**opc-daily-signal**](https://github.com/MackDing/opc-daily-signal) | AI-powered daily decision intelligence for OPC founders |
 | [**doc-preprocess-hub**](https://github.com/MackDing/doc-preprocess-hub) | Enterprise document preprocessing — MinerU + docling |
+
+---
+
+## 相关
+
+**统一端点**：`https://api.97wl.cc/v1` —— 兼容 OpenAI 与 Anthropic 双协议，QQ 邮箱注册，按量计费。
+
+- **[配置指南](https://1261398983.github.io/ai-api-guide/)** —— Claude Code / code CLI / Cherry Studio 接入
+- **[连不上排查](https://1261398983.github.io/ai-api-guide/why-blocked.html)** —— DNS / TLS / 鉴权 / 出口四层定位
+- **[风险自查](https://1261398983.github.io/ai-api-guide/risk.html)** —— 跑路前兆 7 个信号
+- **[延迟实测](https://1261398983.github.io/ai-api-guide/uptime.html)** —— 8 家同机采样原始数据
+
+> 第三方转发服务，非上游官方产品。建议按实际用量充值，避免大额预付。
