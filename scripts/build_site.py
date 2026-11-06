@@ -552,6 +552,9 @@ def build_all():
 <title>All gateways - AI API directory index</title>
 <meta name="description" content="Complete index of every AI API gateway, engine guide and alternatives page in this directory. One static list so nothing is only reachable by search.">
 <link rel="canonical" href="https://1261398983.github.io/awesome-ai-api/all/">
+<meta property="og:image" content="https://1261398983.github.io/awesome-ai-api/og-image.png">
+<meta property="og:title" content="All gateways - AI API directory index">
+<meta property="og:type" content="website">
 <style>
 body{{margin:0;background:#0b0e14;color:#e6ebf5;font:16px/1.7 ui-sans-serif,system-ui,-apple-system,"Segoe UI","Microsoft YaHei",sans-serif}}
 .wrap{{max-width:920px;margin:0 auto;padding:48px 20px 80px}}
