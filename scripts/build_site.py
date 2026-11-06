@@ -265,6 +265,10 @@ def build_gateway_pages():
         score = g.get("score", "—")
         region = g.get("region", "—")
         engine = g.get("engine") or "unknown"
+        # 111/187 gateways have no engine field; linking them to
+        # /engine/unknown/ produced a 404 on every one of those pages.
+        engine_nav = (f'<a href="/awesome-ai-api/engine/{engine}/">more {engine} gateways</a>'
+                      if g.get("engine") else '<a href="/awesome-ai-api/">all gateways</a>')
         api = g.get("has_api")
         api_txt_en = "✅ confirmed /v1/models endpoint" if api else "⏳ endpoint not publicly verified"
         api_txt_zh = "✅ 已验证 /v1/models 接口" if api else "⏳ 接口未公开验证"
@@ -341,7 +345,7 @@ def build_gateway_pages():
 <nav>
   <a href="/awesome-ai-api/">← awesome-ai-api</a> ·
   <a href="/awesome-ai-api/zh/">中文</a> ·
-  <a href="/awesome-ai-api/engine/{engine}/">more {engine} gateways</a>
+  {engine_nav}
 </nav>
 
 <h1>{escape(name)}</h1>
@@ -728,8 +732,24 @@ paths:
     print("[ok] .well-known/ai-plugin.json + openapi.yaml + enriched llms.txt")
 
 
+def copy_reviews():
+    """reviews/ lives at repo root but pages link to /awesome-ai-api/reviews/.
+
+    Without this the methodology link 404s on every gateway page.
+    """
+    src_dir = ROOT / "reviews"
+    dst_dir = DOCS / "reviews"
+    if not src_dir.exists():
+        return
+    dst_dir.mkdir(parents=True, exist_ok=True)
+    for f in src_dir.glob("*.md"):
+        (dst_dir / f.name).write_text(f.read_text(encoding="utf-8"), encoding="utf-8")
+    print(f"[ok] reviews/ copied to docs/reviews/")
+
+
 def main() -> int:
     copy_gateways()
+    copy_reviews()
     build_csv()
     build_rss()
     build_llms_full()
