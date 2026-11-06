@@ -13,6 +13,7 @@ from __future__ import annotations
 
 import csv
 import json
+from html import escape
 import re
 import shutil
 import sys
@@ -505,6 +506,88 @@ def build_engine_pages():
     print(f"[ok] generated {count} per-engine pages under docs/engine/")
 
 
+
+def build_all():
+    """Regenerate docs/all/index.html from gateways.json.
+
+    This page used to be hand-maintained, so it drifted: it linked to slugs
+    whose pages no longer existed (404s fed to crawlers) and missed newer
+    gateways entirely. Generating it from the same data source as /g/ and
+    /engine/ keeps the three in sync forever.
+    """
+    data = json.loads((DOCS / "gateways.json").read_text(encoding="utf-8"))
+    gws = [g for g in data.get("gateways", []) if g.get("slug")]
+    engines = sorted({g.get("engine") for g in gws if g.get("engine")})
+
+    # A gateway whose scraped title is an HTTP error is not a useful listing.
+    BAD_TITLE = re.compile(r"^(\s*\d{3}\b|forbidden|not found|unauthorized|welcome$)", re.I)
+
+    def label(g):
+        name = (g.get("name") or "").strip()
+        if not name or BAD_TITLE.match(name):
+            return g["slug"].replace("-", ".")
+        return name
+
+    gws.sort(key=lambda g: label(g).lower())
+
+    gw_items = "\n".join(
+        f'<li><a href="/awesome-ai-api/g/{escape(g["slug"])}/">{escape(label(g))}</a></li>'
+        for g in gws
+    )
+    en_items = "\n".join(
+        f'<li><a href="/awesome-ai-api/engine/{escape(e)}/">{escape(e)}</a></li>'
+        for e in engines
+    )
+
+    html = f"""<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>All gateways - AI API directory index</title>
+<meta name="description" content="Complete index of every AI API gateway, engine guide and alternatives page in this directory. One static list so nothing is only reachable by search.">
+<link rel="canonical" href="https://1261398983.github.io/awesome-ai-api/all/">
+<style>
+body{{margin:0;background:#0b0e14;color:#e6ebf5;font:16px/1.7 ui-sans-serif,system-ui,-apple-system,"Segoe UI","Microsoft YaHei",sans-serif}}
+.wrap{{max-width:920px;margin:0 auto;padding:48px 20px 80px}}
+h1{{font-size:clamp(24px,4vw,34px);margin:0 0 10px}}
+h2{{font-size:19px;margin:40px 0 12px;padding-left:12px;border-left:3px solid #5b8dff}}
+p.lead{{color:#93a0b8;margin:0 0 8px}}
+ul{{list-style:none;padding:0;margin:0;display:grid;gap:8px;grid-template-columns:repeat(auto-fill,minmax(260px,1fr))}}
+li a{{display:block;padding:9px 12px;border:1px solid #1e2636;border-radius:8px;color:#c8d6ea;text-decoration:none;font-size:14px}}
+li a:hover{{border-color:#5b8dff;color:#fff}}
+footer{{margin-top:48px;padding-top:20px;border-top:1px solid #1e2636;color:#93a0b8;font-size:14px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>All pages in this directory</h1>
+<p class="lead">Every gateway, engine guide and comparison page, on one static list.
+Nothing here is reachable only through search.</p>
+<p class="lead">{len(gws)} gateways \u00b7 {len(engines)} engine guides \u00b7 regenerated on every build</p>
+
+<h2>Gateways / \u4e2d\u8f6c\u7ad9 ({len(gws)})</h2>
+<ul>
+{gw_items}
+</ul>
+
+<h2>Engine guides / \u5f15\u64ce\u6307\u5357 ({len(engines)})</h2>
+<ul>
+{en_items}
+</ul>
+
+<footer>Data is CC0. Every link above points to a page in this directory.</footer>
+</div>
+</body>
+</html>
+"""
+
+    out = DOCS / "all"
+    out.mkdir(parents=True, exist_ok=True)
+    (out / "index.html").write_text(html, encoding="utf-8")
+    print(f"[ok] all/index.html ({len(gws)} gateways + {len(engines)} engines)")
+
+
 def build_sitemap():
     """Regenerate docs/sitemap.xml to include all gateway + engine pages."""
     data = json.loads((DOCS / "gateways.json").read_text(encoding="utf-8"))
@@ -645,6 +728,7 @@ def main() -> int:
     build_stats()
     build_gateway_pages()
     build_engine_pages()
+    build_all()
     build_sitemap()
     build_ai_manifest()
     return 0
