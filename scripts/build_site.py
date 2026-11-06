@@ -257,6 +257,11 @@ def build_gateway_pages():
 
         name = g.get("name", slug)
         url = g.get("url", "")
+        # Two gateways can share the same display name (e.g. "AI实验室"),
+        # which produced duplicate <title> and got both pages flagged as
+        # duplicate content. Append the host so every title is unique.
+        _host = re.sub(r"^https?://", "", url).split("/")[0]
+        host_suffix = f" ({_host})" if _host and _host.lower() not in name.lower() else ""
         score = g.get("score", "—")
         region = g.get("region", "—")
         engine = g.get("engine") or "unknown"
@@ -302,7 +307,7 @@ def build_gateway_pages():
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>{escape(name)} — AI API gateway score &amp; uptime</title>
+<title>{escape(name)}{escape(host_suffix)} — AI API gateway score &amp; uptime</title>
 <meta name="description" content="{escape(clamp_desc(f"""{escape(name)} ({region}) scores {score}/10 on the awesome-ai-api leaderboard. Engine: {engine}. {'Verified /v1/models' if api else 'Unverified endpoint'}. Updated daily. {escape(name)} 中转站评测 / 可用性监控 / 分数 {score}/10."""))}">
 <meta name="keywords" content="{escape(name)}, {escape(name)} 中转, {escape(name)} API, AI API gateway, {engine}, /v1/models, OpenAI compatible, Claude relay, GPT API">
 <link rel="canonical" href="{page_url}">
