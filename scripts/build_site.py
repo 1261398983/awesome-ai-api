@@ -93,7 +93,7 @@ def build_rss():
     items_xml = []
     for g in top:
         title = f"#{top.index(g)+1} {g.get('name','?')} — score {g.get('score','?')}"
-        url = g.get("url", "https://github.com/MackDing/awesome-ai-api")
+        url = g.get("url", "https://1261398983.github.io/awesome-ai-api/")
         desc = (
             f"Region: {g.get('region','?')} · "
             f"API: {'verified' if g.get('has_api') else 'unconfirmed'} · "
@@ -664,7 +664,7 @@ def build_ai_manifest():
         },
         "logo_url": "https://1261398983.github.io/awesome-ai-api/og-image.png",
         "contact_email": "noreply@github.com",
-        "legal_info_url": "https://github.com/MackDing/awesome-ai-api",
+        "legal_info_url": "https://github.com/1261398983/awesome-ai-api",
     }
     (wk / "ai-plugin.json").write_text(json.dumps(plugin, indent=2), encoding="utf-8")
 
