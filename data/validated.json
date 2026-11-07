@@ -940,39 +940,6 @@
     "promoted_by": "api-probe"
   },
   {
-    "url": "https://your-endpoint.example.com",
-    "final_url": "https://your-endpoint.example.com",
-    "status": 200,
-    "took_ms": 410,
-    "error": null,
-    "engine": null,
-    "title": "Sample Gateway (removed)",
-    "en_keywords": [
-      "api gateway"
-    ],
-    "zh_keywords": [
-      "中转",
-      "中转站",
-      "兼容",
-      "统一接入"
-    ],
-    "model_keywords": [
-      "claude",
-      "deepseek"
-    ],
-    "payment_hints": [
-      "wechat"
-    ],
-    "verdict": "likely_relay",
-    "has_api": true,
-    "probe_status": 401,
-    "probe_path": "/v1/models",
-    "probe_hint": "401-need-key",
-    "real_models": [],
-    "override_region": "cn",
-    "note": "Operator self-submission. OpenAI-compatible + native Anthropic Messages API; QQ-mail signup, CNY 10 minimum, open-source Sub2API panel. No standalone public price page yet — /v1/models returns 401 by design, so probe with has_api + 401-need-key. Unknown paths return 200 (soft 404), so don't treat homepage 200 as liveness."
-  },
-  {
     "url": "https://api.996444.cn",
     "final_url": "https://api.996444.cn",
     "status": 200,

@@ -671,44 +671,6 @@
       "last_verified": "2026-10-26"
     },
     {
-      "slug": "api-removed-cc",
-      "name": "Sample Gateway (removed)",
-      "url": "https://your-endpoint.example.com",
-      "final_url": "https://your-endpoint.example.com",
-      "region": "cn",
-      "payment": [
-        "wechat"
-      ],
-      "models_signaled": [
-        "claude",
-        "openai",
-        "deepseek"
-      ],
-      "real_models_count": 0,
-      "real_models_sample": [],
-      "engine": null,
-      "reachable": true,
-      "http_status": 200,
-      "took_ms": 482,
-      "has_api": true,
-      "probe": {
-        "status": 401,
-        "path": "/v1/models",
-        "hint": "401-need-key"
-      },
-      "uptime": {
-        "window_days": 30,
-        "samples": 1,
-        "uptime_pct": 3.3,
-        "streak_days": 0
-      },
-      "upstream": null,
-      "note": "Operator self-submission. OpenAI-compatible + native Anthropic Messages API; QQ-mail signup, CNY 10 minimum, open-source Sub2API panel. No standalone public price page yet — /v1/models returns 401 by design, so probe with has_api + 401-need-key. Unknown paths return 200 (soft 404), so don't treat homepage 200 as liveness.",
-      "score": 9.5,
-      "verdict": "likely_relay",
-      "last_verified": "2026-10-26"
-    },
-    {
       "slug": "api-v3-cm",
       "name": "api.v3.cm",
       "url": "https://api.v3.cm",

@@ -74,7 +74,6 @@
 | 68 | [Shell API (gptgod.cloud)](https://gptgod.cloud) | cn | 🔌 | — | — | — | 9.0 | 385 ms | 🟢 已验证 |
 | 69 | [LaoZhang API](https://api.laozhang.ai) | global | 🔌 | — | — | — | 9.0 | 387 ms | 🟢 已验证 |
 | 70 | [api.ikuncode.cc](https://api.ikuncode.cc) | global | 🔌 | — | new-api | — | 9.0 | 392 ms | 🟢 已验证 |
-| 71 | [Sample Gateway (removed)](https://your-endpoint.example.com) | cn | 🔌 | claude, deepseek | — | wechat | 9.0 | 410 ms | 🟢 已验证 |
 | 72 | [api.kissapi.ai](https://api.kissapi.ai) | global | 🔌 | — | new-api | — | 9.0 | 470 ms | 🟢 已验证 |
 | 73 | [Loading...](https://co.yes.vg) | global | 🔌 | — | — | — | 9.0 | 488 ms | 🟢 已验证 |
 | 74 | [duckcoding.ai](https://www.duckcoding.ai) | global | 🔌 | — | new-api | — | 9.0 | 526 ms | 🟢 已验证 |

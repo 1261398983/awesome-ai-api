@@ -1,7 +1,7 @@
 # awesome-ai-api (full dump for LLMs)
 
 > Full, machine-readable leaderboard of AI API gateways, formatted for LLM ingestion.
-> Snapshot: 2026-11-07 16:08 SGT. Total: 187. API-confirmed: 90.
+> Snapshot: 2026-11-07 16:08 SGT. Total: 186. API-confirmed: 89.
 > Canonical site: https://1261398983.github.io/awesome-ai-api/
 > Source repo: https://github.com/MackDing/awesome-ai-api
 > License: MIT (code) + CC0 (data)

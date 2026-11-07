@@ -1514,14 +1514,6 @@
       "avg_latency_ms": 205,
       "streak_days": 0
     },
-    "https://your-endpoint.example.com": {
-      "samples": 13,
-      "window_days": 30,
-      "uptime_pct": 43.3,
-      "api_uptime_pct": 43.3,
-      "avg_latency_ms": 388,
-      "streak_days": 0
-    },
     "https://api1.zhtec.xyz": {
       "samples": 13,
       "window_days": 30,
