@@ -1,63 +1,63 @@
 # awesome-ai-api (full dump for LLMs)
 
 > Full, machine-readable leaderboard of AI API gateways, formatted for LLM ingestion.
-> Snapshot: 2026-11-17 17:59 SGT. Total: 190. API-confirmed: 91.
+> Snapshot: 2026-11-18 17:37 SGT. Total: 187. API-confirmed: 90.
 > Canonical site: https://1261398983.github.io/awesome-ai-api/
 > Source repo: https://github.com/MackDing/awesome-ai-api
 > License: MIT (code) + CC0 (data)
 
 ## Top 50 Gateways (sorted by score)
 
-1. Avian — https://avian.io — score 9.9, API verified, region global, engine unknown, latency 304ms, uptime 86.7% over 26 samples, models: claude, gpt, anthropic, openai, deepseek, llama
-2. Featherless — https://featherless.ai — score 9.9, API verified, region global, engine one-api, latency 311ms, uptime 86.7% over 26 samples, models: gpt, openai, deepseek, qwen, mistral, llama
-3. AIHubMix — https://aihubmix.com — score 9.9, API verified, region global, engine one-api, latency 369ms, uptime 86.7% over 26 samples, models: claude, gpt, gemini, chatgpt, openai, deepseek
-4. AnyRouter · Universal AI Model Router — https://anyrouter.dev — score 9.7, API verified, region global, engine one-api, latency 738ms, uptime 86.7% over 26 samples, models: gemini, anthropic, openai, deepseek, qwen, mistral
-5. BUZZ — https://buzzai.cc — score 9.7, API verified, region global, engine one-api, latency 761ms, uptime 86.7% over 26 samples, models: claude, gpt, gemini, chatgpt, anthropic, openai
-6. APIMart — https://apimart.ai — score 9.7, API verified, region global, engine one-api, latency 1208ms, uptime 86.7% over 26 samples, models: claude, gpt, gemini, anthropic, openai, qwen
-7. PackyAPI (PackyCode) — https://www.packyapi.com — score 9.6, API verified, region cn, engine unknown, latency 202ms, uptime 86.7% over 26 samples, models: claude, gpt, gemini, openai
-8. 呆呆兽中转站｜Claude、Codex、GLM、Kimi 折扣 API — https://www.ddshub.cc — score 9.6, API verified, region cn, engine unknown, latency 1008ms, uptime 86.7% over 26 samples, models: claude, gpt, anthropic, openai
-9. OpenRouter — https://openrouter.ai — score 9.5, API verified, region global, engine one-api, latency 174ms, uptime 86.7% over 26 samples, models: claude, gpt, gemini, anthropic, openai, deepseek
-10. api.vveai.com — https://api.vveai.com — score 9.5, API verified, region cn, engine unknown, latency 214ms, uptime 86.7% over 26 samples, models: claude, gpt, gemini, chatgpt, openai, deepseek
-11. Aiberm — https://aiberm.com — score 9.5, API verified, region global, engine one-api, latency 242ms, uptime 86.7% over 26 samples, models: claude, gpt, gemini, anthropic, openai, deepseek
-12. 钱多多 API｜OpenAI 兼容的大模型统一接口 — https://aigcbest.top — score 9.5, API verified, region cn, engine dify, latency 266ms, uptime 86.7% over 26 samples, models: claude, gpt, gemini, anthropic, openai, deepseek
-13. api.v3.cm — https://api.v3.cm — score 9.5, API verified, region cn, engine unknown, latency 277ms, uptime 86.7% over 26 samples, models: claude, gpt, gemini, chatgpt, openai, deepseek
-14. TiMi CC — https://timicc.com — score 9.5, API verified, region cn, engine unknown, latency 403ms, uptime 86.7% over 26 samples, models: gpt, openai, qwen
-15. Yuegle API — https://api.yuegle.com — score 9.5, API verified, region cn, engine unknown, latency 412ms, uptime 86.7% over 26 samples, models: claude, gpt, gemini, chatgpt, openai, deepseek
-16. api.v36.cm — https://api.v36.cm — score 9.5, API verified, region cn, engine unknown, latency 426ms, uptime 86.7% over 26 samples, models: claude, gpt, gemini, chatgpt, openai, deepseek
-17. Doro AI — https://doro.lol — score 9.5, API verified, region cn, engine new-api, latency 477ms, uptime 86.7% over 26 samples, models: claude, gpt, gemini, chatgpt, anthropic
-18. api.gpt.ge — https://api.gpt.ge — score 9.5, API verified, region cn, engine unknown, latency 480ms, uptime 86.7% over 26 samples, models: claude, gpt, gemini, chatgpt, openai, deepseek
-19. AI派 · AI 大模型 API 中转站：Claude、GPT、Gemini 一个令牌全接入 — https://api.aipaibox.com — score 9.5, API verified, region cn, engine new-api, latency 492ms, uptime 86.7% over 26 samples, models: claude, gpt, gemini, openai, grok
-20. RightCode — https://www.right.codes — score 9.5, API verified, region cn, engine unknown, latency 519ms, uptime 86.7% over 26 samples, models: claude, gemini, openai
-21. ePhone AI — https://api.ephone.ai — score 9.5, API verified, region cn, engine unknown, latency 623ms, uptime 86.7% over 26 samples, models: claude, gpt, gemini, openai, deepseek
-22. jeniya.cn — https://jeniya.cn — score 9.5, API verified, region cn, engine unknown, latency 1155ms, uptime 86.7% over 26 samples, models: claude, gpt, chatgpt, openai, deepseek
-23. 便携AI聚合API — https://api.bianxieai.com — score 9.5, API verified, region cn, engine new-api, latency 1396ms, uptime 86.7% over 26 samples, models: claude, gemini, openai, deepseek, grok
-24. ClaudeCN — https://claudecn.top — score 9.4, API verified, region cn, engine unknown, latency 208ms, uptime 86.7% over 26 samples, models: claude, gpt, gemini, openai
-25. ggwk1.online — https://www.ggwk1.online — score 9.4, API verified, region cn, engine new-api, latency 266ms, uptime 86.7% over 26 samples, models: claude, gpt, gemini, openai
-26. OhMyGPT — https://www.ohmygpt.com — score 9.4, API verified, region global, engine one-api, latency 381ms, uptime 86.7% over 26 samples, models: gpt, anthropic, openai, deepseek
-27. api-featherless-ai — https://api.featherless.ai — score 9.4, API verified, region global, engine unknown, latency 385ms, uptime 86.7% over 26 samples, models: -
-28. api-gptgod-work — https://api.gptgod.work — score 9.4, API verified, region global, engine unknown, latency 1450ms, uptime 86.7% over 26 samples, models: -
-29. api.onechats.top — https://api.onechats.top — score 9.3, API verified, region cn, engine new-api, latency 215ms, uptime 86.7% over 26 samples, models: claude, gemini, openai
-30. api-holdai-top — https://api.holdai.top — score 9.3, API verified, region cn, engine unknown, latency 246ms, uptime 83.3% over 25 samples, models: claude, gemini, openai
-31. api.soruxgpt.com — https://api.soruxgpt.com — score 9.3, API verified, region cn, engine new-api, latency 344ms, uptime 86.7% over 26 samples, models: claude, gemini, openai
-32. api-chatfire-cn — https://api.chatfire.cn — score 9.3, API verified, region cn, engine unknown, latency 506ms, uptime 86.7% over 26 samples, models: claude, gemini, openai
-33. api-mnapi-com — https://api.mnapi.com — score 9.3, API verified, region cn, engine unknown, latency 711ms, uptime 86.7% over 26 samples, models: claude, gemini, openai
-34. comfly — https://ai.comfly.chat — score 9.2, API verified, region global, engine unknown, latency 1476ms, uptime 86.7% over 26 samples, models: gpt, openai
-35. Tokencloud.ai — https://ai.tokencloud.ai — score 9.2, API verified, region global, engine unknown, latency 1657ms, uptime 86.7% over 26 samples, models: -
-36. zen-ai.top — https://zen-ai.top — score 9.1, API verified, region cn, engine unknown, latency 156ms, uptime 86.7% over 26 samples, models: openai
-37. go.sbgpt.site — https://go.sbgpt.site — score 9.1, API verified, region cn, engine new-api, latency 204ms, uptime 83.3% over 25 samples, models: openai
-38. 钱多多 API (api.ifopen.ai) — https://api.ifopen.ai — score 9.1, API verified, region cn, engine new-api, latency 342ms, uptime 86.7% over 26 samples, models: openai
-39. GPTNB ONEAPI — https://oneapi.gptnb.ai — score 9.1, API verified, region cn, engine unknown, latency 417ms, uptime 86.7% over 26 samples, models: gpt
-40. 钱多多 API (35.aigcbest.top) — https://35.aigcbest.top — score 9.1, API verified, region cn, engine new-api, latency 455ms, uptime 86.7% over 26 samples, models: openai
-41. 钱多多 API (api.aigcbest.top) — https://api.aigcbest.top — score 9.1, API verified, region cn, engine new-api, latency 458ms, uptime 86.7% over 26 samples, models: openai
-42. AI302 Api (api.302ai.com) — https://api.302ai.com — score 9.1, API verified, region global, engine unknown, latency 681ms, uptime 86.7% over 26 samples, models: gpt
-43. AI302 Api (api.302ai.cn) — https://api.302ai.cn — score 9.1, API verified, region global, engine unknown, latency 1371ms, uptime 86.7% over 26 samples, models: gpt
-44. 欢迎访问无限API — https://infai.cc — score 9.0, API verified, region cn, engine unknown, latency 183ms, uptime 86.7% over 26 samples, models: -
-45. sparkcode.top — https://sparkcode.top — score 9.0, API verified, region global, engine new-api, latency 188ms, uptime 86.7% over 26 samples, models: -
-46. new.yunai.link — https://new.yunai.link — score 9.0, API verified, region global, engine new-api, latency 196ms, uptime 86.7% over 26 samples, models: -
-47. KKSJ API — https://cnapi.kksj.org — score 9.0, API verified, region global, engine new-api, latency 198ms, uptime 86.7% over 26 samples, models: -
-48. apirouter.ai — https://apirouter.ai — score 9.0, API verified, region global, engine new-api, latency 209ms, uptime 86.7% over 26 samples, models: -
-49. zerocode.sbs — https://zerocode.sbs — score 9.0, API verified, region global, engine new-api, latency 217ms, uptime 86.7% over 26 samples, models: -
-50. chatapi.onechats.top — https://chatapi.onechats.top — score 9.0, API verified, region global, engine new-api, latency 228ms, uptime 86.7% over 26 samples, models: -
+1. Featherless — https://featherless.ai — score 9.9, API verified, region global, engine one-api, latency 158ms, uptime 86.7% over 26 samples, models: gpt, openai, deepseek, qwen, mistral, llama
+2. AIHubMix — https://aihubmix.com — score 9.9, API verified, region global, engine one-api, latency 295ms, uptime 86.7% over 26 samples, models: claude, gpt, gemini, chatgpt, openai, deepseek
+3. Avian — https://avian.io — score 9.9, API verified, region global, engine unknown, latency 397ms, uptime 86.7% over 26 samples, models: claude, gpt, anthropic, openai, deepseek, llama
+4. BUZZ — https://buzzai.cc — score 9.7, API verified, region global, engine one-api, latency 86ms, uptime 86.7% over 26 samples, models: claude, gpt, gemini, chatgpt, anthropic, openai
+5. AnyRouter · Universal AI Model Router — https://anyrouter.dev — score 9.7, API verified, region global, engine one-api, latency 561ms, uptime 86.7% over 26 samples, models: gpt, anthropic, openai, deepseek, mistral
+6. APIMart — https://apimart.ai — score 9.7, API verified, region global, engine one-api, latency 763ms, uptime 86.7% over 26 samples, models: claude, gpt, gemini, anthropic, openai, qwen
+7. PackyAPI (PackyCode) — https://www.packyapi.com — score 9.6, API verified, region cn, engine unknown, latency 117ms, uptime 86.7% over 26 samples, models: claude, gpt, gemini, openai
+8. 呆呆兽中转站｜Claude、Codex、GLM、Kimi 折扣 API — https://www.ddshub.cc — score 9.6, API verified, region cn, engine unknown, latency 362ms, uptime 86.7% over 26 samples, models: claude, gpt, anthropic, openai
+9. 钱多多 API｜OpenAI 兼容的大模型统一接口 — https://aigcbest.top — score 9.5, API verified, region cn, engine dify, latency 77ms, uptime 86.7% over 26 samples, models: claude, gpt, gemini, anthropic, openai, deepseek
+10. api.v3.cm — https://api.v3.cm — score 9.5, API verified, region cn, engine unknown, latency 92ms, uptime 86.7% over 26 samples, models: claude, gpt, gemini, chatgpt, openai, deepseek
+11. TiMi CC — https://timicc.com — score 9.5, API verified, region cn, engine unknown, latency 113ms, uptime 86.7% over 26 samples, models: gpt, openai, qwen
+12. OpenRouter — https://openrouter.ai — score 9.5, API verified, region global, engine one-api, latency 152ms, uptime 86.7% over 26 samples, models: claude, gpt, gemini, anthropic, openai, deepseek
+13. ePhone AI — https://api.ephone.ai — score 9.5, API verified, region cn, engine unknown, latency 158ms, uptime 86.7% over 26 samples, models: claude, gpt, gemini, openai, deepseek
+14. api.vveai.com — https://api.vveai.com — score 9.5, API verified, region cn, engine unknown, latency 163ms, uptime 86.7% over 26 samples, models: claude, gpt, gemini, chatgpt, openai, deepseek
+15. Aiberm — https://aiberm.com — score 9.5, API verified, region global, engine one-api, latency 171ms, uptime 86.7% over 26 samples, models: claude, gpt, gemini, anthropic, openai, deepseek
+16. api.gpt.ge — https://api.gpt.ge — score 9.5, API verified, region cn, engine unknown, latency 186ms, uptime 86.7% over 26 samples, models: claude, gpt, gemini, chatgpt, openai, deepseek
+17. api.v36.cm — https://api.v36.cm — score 9.5, API verified, region cn, engine unknown, latency 187ms, uptime 86.7% over 26 samples, models: claude, gpt, gemini, chatgpt, openai, deepseek
+18. AI派 · AI 大模型 API 中转站：Claude、GPT、Gemini 一个令牌全接入 — https://api.aipaibox.com — score 9.5, API verified, region cn, engine new-api, latency 307ms, uptime 86.7% over 26 samples, models: claude, gpt, gemini, openai, grok
+19. RightCode — https://www.right.codes — score 9.5, API verified, region cn, engine unknown, latency 353ms, uptime 86.7% over 26 samples, models: claude, gemini, openai
+20. Yuegle API — https://api.yuegle.com — score 9.5, API verified, region cn, engine unknown, latency 384ms, uptime 86.7% over 26 samples, models: claude, gpt, gemini, chatgpt, openai, deepseek
+21. Doro AI — https://doro.lol — score 9.5, API verified, region cn, engine new-api, latency 678ms, uptime 86.7% over 26 samples, models: claude, gpt, gemini, chatgpt, anthropic
+22. 便携AI聚合API — https://api.bianxieai.com — score 9.5, API verified, region cn, engine new-api, latency 1040ms, uptime 86.7% over 26 samples, models: claude, gemini, openai, deepseek, grok
+23. jeniya.cn — https://jeniya.cn — score 9.5, API verified, region cn, engine unknown, latency 1121ms, uptime 86.7% over 26 samples, models: claude, gpt, chatgpt, openai, deepseek
+24. api-featherless-ai — https://api.featherless.ai — score 9.4, API verified, region global, engine unknown, latency 138ms, uptime 86.7% over 26 samples, models: -
+25. ClaudeCN — https://claudecn.top — score 9.4, API verified, region cn, engine unknown, latency 175ms, uptime 86.7% over 26 samples, models: claude, gpt, gemini, openai
+26. ggwk1.online — https://www.ggwk1.online — score 9.4, API verified, region cn, engine new-api, latency 268ms, uptime 86.7% over 26 samples, models: claude, gpt, gemini, openai
+27. OhMyGPT — https://www.ohmygpt.com — score 9.4, API verified, region global, engine one-api, latency 275ms, uptime 86.7% over 26 samples, models: gpt, anthropic, openai, deepseek
+28. api-gptgod-work — https://api.gptgod.work — score 9.4, API verified, region global, engine unknown, latency 631ms, uptime 86.7% over 26 samples, models: -
+29. api-holdai-top — https://api.holdai.top — score 9.3, API verified, region cn, engine unknown, latency 103ms, uptime 83.3% over 25 samples, models: claude, gemini, openai
+30. api.onechats.top — https://api.onechats.top — score 9.3, API verified, region cn, engine new-api, latency 106ms, uptime 86.7% over 26 samples, models: claude, gemini, openai
+31. api.soruxgpt.com — https://api.soruxgpt.com — score 9.3, API verified, region cn, engine new-api, latency 206ms, uptime 86.7% over 26 samples, models: claude, gemini, openai
+32. api-chatfire-cn — https://api.chatfire.cn — score 9.3, API verified, region cn, engine unknown, latency 470ms, uptime 86.7% over 26 samples, models: claude, gemini, openai
+33. api-mnapi-com — https://api.mnapi.com — score 9.3, API verified, region cn, engine unknown, latency 546ms, uptime 86.7% over 26 samples, models: claude, gemini, openai
+34. comfly — https://ai.comfly.chat — score 9.2, API verified, region global, engine unknown, latency 974ms, uptime 86.7% over 26 samples, models: gpt, openai
+35. Tokencloud.ai — https://ai.tokencloud.ai — score 9.2, API verified, region global, engine unknown, latency 1309ms, uptime 86.7% over 26 samples, models: -
+36. go.sbgpt.site — https://go.sbgpt.site — score 9.1, API verified, region cn, engine new-api, latency 63ms, uptime 83.3% over 25 samples, models: openai
+37. GPTNB ONEAPI — https://oneapi.gptnb.ai — score 9.1, API verified, region cn, engine unknown, latency 124ms, uptime 86.7% over 26 samples, models: gpt
+38. 钱多多 API (api.ifopen.ai) — https://api.ifopen.ai — score 9.1, API verified, region cn, engine new-api, latency 260ms, uptime 86.7% over 26 samples, models: openai
+39. zen-ai.top — https://zen-ai.top — score 9.1, API verified, region cn, engine unknown, latency 265ms, uptime 86.7% over 26 samples, models: openai
+40. 钱多多 API (35.aigcbest.top) — https://35.aigcbest.top — score 9.1, API verified, region cn, engine new-api, latency 328ms, uptime 86.7% over 26 samples, models: openai
+41. 钱多多 API (api.aigcbest.top) — https://api.aigcbest.top — score 9.1, API verified, region cn, engine new-api, latency 357ms, uptime 86.7% over 26 samples, models: openai
+42. AI302 Api (api.302ai.com) — https://api.302ai.com — score 9.1, API verified, region global, engine unknown, latency 511ms, uptime 86.7% over 26 samples, models: gpt
+43. AI302 Api (api.302ai.cn) — https://api.302ai.cn — score 9.1, API verified, region global, engine unknown, latency 1456ms, uptime 86.7% over 26 samples, models: gpt
+44. api.dzzi.ai — https://api.dzzi.ai — score 9.0, API verified, region global, engine new-api, latency 79ms, uptime 83.3% over 25 samples, models: -
+45. new.yunai.link — https://new.yunai.link — score 9.0, API verified, region global, engine new-api, latency 86ms, uptime 86.7% over 26 samples, models: -
+46. chatapi.onechats.top — https://chatapi.onechats.top — score 9.0, API verified, region global, engine new-api, latency 94ms, uptime 86.7% over 26 samples, models: -
+47. 404 Not Found — https://api.aabao.top — score 9.0, API verified, region global, engine unknown, latency 100ms, uptime 86.7% over 26 samples, models: -
+48. new.xjai.cc — https://new.xjai.cc — score 9.0, API verified, region global, engine new-api, latency 105ms, uptime 83.3% over 25 samples, models: -
+49. zerocode.sbs — https://zerocode.sbs — score 9.0, API verified, region global, engine new-api, latency 105ms, uptime 86.7% over 26 samples, models: -
+50. OneToken — https://onetoken.one — score 9.0, API verified, region global, engine new-api, latency 109ms, uptime 86.7% over 26 samples, models: -
 
 ## Citation
 
